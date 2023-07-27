@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>File Encryption</title>
+</head>
+<body>
+  <h1>File Encryption</h1>
+  <h2>Step 1: Upload a file to encrypt</h2>
+  <input type="file" id="fileToEncrypt">
+  <button onclick="handleEncrypt()">Encrypt</button>
+
+  <h2>Step 2: Upload the recipient's public key</h2>
+  <input type="file" id="publicKeyFile">
+  <button onclick="handleUploadPublicKey()">Upload Public Key</button>
+
+  <h2>Step 3: Decrypt an encrypted file</h2>
+  <input type="file" id="encryptedFile">
+  <button onclick="handleDecrypt()">Decrypt</button>
+
+  <h2>Encrypted Content</h2>
+  <textarea id="encryptedContent" rows="10" cols="50" readonly></textarea>
+
+  <h2>Decrypted Content</h2>
+  <textarea id="decryptedContent" rows="10" cols="50" readonly></textarea>
+
+  
+  <script src="encryptanddecrypt.js"></script>
+</body>
+</html>
